@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <svg width="1000" height="500">
+  <circle cx="150" cy="200" r="50" fill="yellow">
+  <animate attributeName="fill" from="blue" to="red" dur="1s" begin="click" id="test1" fill="freeze"/>
+  <animate attributeName="fill" from="red" to="yellow" dur="1s" begin="test1.end" fill="freeze"/>
+      </circle>
+      <svg width="1000" height="500">
+    <circle cx="650" cy="200" r="50" fill="yellow">
+    <animate attributeName="fill" from="blue" to="red" dur="1s" begin="click" id="test1" fill="freeze"/>
+    <animate attributeName="fill" from="red" to="yellow" dur="1s" begin="test1.end" fill="freeze"/>
+        </circle>
+        <svg width="1000" height="1000">
+          <circle cx="400" cy="500" r="200" fill="white"/>
+        </svg>
+  </body>
+</html>
