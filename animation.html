@@ -5,19 +5,23 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-  <svg width="145%" viewBox="0 0 200 100">
-    
-  <circle cx="150" cy="250" r="50" fill="yellow">
-  <animate attributeName="fill" from="blue" to="red" dur="1s" begin="click" id="test1" fill="freeze"/>
-  <animate attributeName="fill" from="red" to="yellow" dur="1s" begin="test1.end" fill="freeze"/>
+  <svg width="800" height="500">
+  <circle cx="150" cy="200" r="60" fill="yellow">
+  <animate attributeName="fill" from="blue" to="yellow" dur="1s" begin="click" id="test1" fill="freeze"/>
+  <animate attributeName="fill" from="white" to="yellow" dur="1s" begin="test1.end" fill="freeze"/>
       </circle>
-      <svg width="1000" height="500">
-    <circle cx="650" cy="250" r="50" fill="yellow">
-    <animate attributeName="fill" from="blue" to="red" dur="1s" begin="click" id="test1" fill="freeze"/>
-    <animate attributeName="fill" from="red" to="yellow" dur="1s" begin="test1.end" fill="freeze"/>
+    <circle cx="650" cy="200" r="60" fill="yellow">
+    <animate attributeName="fill" from="blue" to="yellow" dur="1s" begin="click" id="test1" fill="freeze"/>
+    <animate attributeName="fill" from="white" to="yellow" dur="1s" begin="test1.end" fill="freeze"/>
         </circle>
-        <svg width="1000" height="1000">
-          <circle cx="400" cy="600" r="200" fill="white"/>
+        <circle cx="400" cy="600" r="250" fill="gray">
+    <animate id="anim1" attributeName="fill" from="yellow" to="white" dur="2s" begin="0s; anim6.end"/>
+    <animate id="anim2" attributeName="fill" from="purple" to="blue" dur="2s" begin="anim1.end"/>
+    <animate id="anim3" attributeName="fill" from="yellow" to="white" dur="2s" begin="anim2.end"/>
+    <animate id="anim4" attributeName="fill" from="white" to="cyan" dur="2s" begin="anim3.end"/>
+    <animate id="anim5" attributeName="fill" from="cyan" to="magenta" dur="2s" begin="anim4.end"/>
+    <animate id="anim6" attributeName="fill" from="magenta" to="white" dur="2s" begin="anim5.end"/>
+</circle>
         </svg>
   </body>
 </html>
