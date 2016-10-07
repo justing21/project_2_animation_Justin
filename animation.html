@@ -6,15 +6,17 @@
   </head>
   <body>
   <svg width="800" height="500">
-  <circle cx="150" cy="250" r="60" fill="yellow">
+    <circle cx="180" cy="250" r="61" fill="black"/>
+  <circle cx="180" cy="250" r="60" fill="yellow">
   <animate attributeName="fill" from="blue" to="yellow" dur="1s" begin="click" id="test1" fill="freeze"/>
   <animate attributeName="fill" from="white" to="yellow" dur="1s" begin="test1.end" fill="freeze"/>
       </circle>
-    <circle cx="650" cy="250" r="60" fill="yellow">
+        <circle cx="630" cy="249" r="61" fill="black"/>
+    <circle cx="630" cy="249" r="60" fill="yellow">
     <animate attributeName="fill" from="blue" to="yellow" dur="1s" begin="click" id="test1" fill="freeze"/>
     <animate attributeName="fill" from="white" to="yellow" dur="1s" begin="test1.end" fill="freeze"/>
         </circle>
-        <circle cx="400" cy="600" r="250" fill="white">
+        <circle cx="410" cy="600" r="250" fill="white">
     <animate id="anim1" attributeName="fill" from="yellow" to="white" dur="2s" begin="0s; anim6.end"/>
     <animate id="anim2" attributeName="fill" from="#FDD017" to="#E8ADAA" dur="2s" begin="anim1.end"/>
     <animate id="anim3" attributeName="fill" from="yellow" to="white" dur="2s" begin="anim2.end"/>
@@ -22,8 +24,14 @@
     <animate id="anim5" attributeName="fill" from="brown" to="red" dur="2s" begin="anim4.end"/>
     <animate id="anim6" attributeName="fill" from="orange" to="white" dur="2s" begin="anim5.end"/>
 </circle>
-<circle cx="270" cy="100" r="50" fill="black">
-  
+<circle cx="270" cy="100" r="40" fill="black"/>
+<circle cx="280" cy="85" r="20" fill="white"/>
+<circle cx="550" cy="100" r="40" fill="black"/>
+<circle cx="560" cy="85" r="20" fill="white"/>
+<ellipse cx="410" cy="200" rx="30" ry="10" fill="black"/>
+<line x1="300" y1="250" x2="520" y2="250" stroke="black" stroke-width="2"/>
+<rect x="210" y="30" width="100" height="50" fill="orange"/>
+<rect x="510" y="30" width="100" height="50" fill="orange"/>
         </svg>
   </body>
 </html>
